@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+    /* header color */
+    --headerBlue: #03A9F4;
+    --headerLightGrey: #7D7D7D;
+    /* main color */
+    --mainLightGrey: #B4AD9E;
+    --mainDarkGrey: #626262;
+    /* footer */
+    --footerButtonBackground: white;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+li:not(:last-child) {
+    margin-right: 99px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header_navigation--item {
+    color: var(--headerLightGrey);
+    font-family: "Playfair Display", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.66px;
+    text-align: left;
+    transition: .3s;
+}
+
+.header_navigation--item:hover {
+    color: var(--headerBlue);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.main_section {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main_card--firsttext {
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16.09px;
+    text-align: left;
+    color: var(--mainLightGrey);
+}
+
+.main_card--title {
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 39.99px;
+    text-align: left;
+    color: var(--mainDarkGrey);
+}
+
+.main_card--secondtext {
+    font-family: Playfair Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.66px;
+    text-align: left;
+    color: var(--mainDarkGrey);
+    max-width: 420px;
+}
+
+.main_section--card:not(:last-child) {
+    margin-bottom: 130px;
+}
+
+.footer_btn {
+    font-family: Playfair Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.66px;
+    text-align: left;
+    color: var(--mainDarkGrey);
+    padding: 21px 49px;
+    height: 60px;
+    background-color: var(--footerButtonBackground);
+    margin-top: 90px;
+}
